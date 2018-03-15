@@ -76,7 +76,7 @@
     <div class="content">
 
         <form method="POST" action="{{route('profile')}}" enctype="multipart/form-data">
-            {{ csrf_field() }} @if ($errors->any())
+            @if ($errors->any())
             <div class="danger">
                 <ul>
                     @foreach ($errors->all() as $error)
